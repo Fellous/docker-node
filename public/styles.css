@@ -59,3 +59,20 @@ body {
     color: #333;
   }
   
+  .navigation-buttons {
+    margin-top: 20px;
+  }
+  
+  .navigation-buttons .btn {
+    background-color: #ff5864;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .navigation-buttons .btn:hover {
+    background-color: #ff3044;
+  }
+  

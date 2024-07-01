@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile de Daniel</title>
+  <title>Profile de <%= profile.name %></title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -17,9 +17,14 @@
         <li><%= hobby %></li>
       <% }); %>
     </ul>
-    <h2>Fun Facts</h2>
-    <p>Daniel peut citer tous les épisodes de <em>Dragon Ball Z</em> par cœur, adore les marathons de jeux vidéo de 24 heures, et a un régime alimentaire composé à 90% de ramen instantanés.</p>
-    <p>Il rêve de visiter le Japon pour participer à un tournoi de e-sport tout en explorant les meilleurs spots de manga à Tokyo.</p>
+    <div class="navigation-buttons">
+      <% if (index > 0) { %>
+        <a href="/profile/<%= index - 1 %>" class="btn">Précédent</a>
+      <% } %>
+      <% if (index < profiles.length - 1) { %>
+        <a href="/profile/<%= index + 1 %>" class="btn">Suivant</a>
+      <% } %>
+    </div>
   </div>
 </body>
 </html>
