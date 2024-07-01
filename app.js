@@ -9,6 +9,7 @@ app.set('view engine', 'ejs');
 
 // Configurer le dossier public pour les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/img', express.static(path.join(__dirname, 'img')));
 
 // Route pour la page de profil
 app.get('/', (req, res) => {
