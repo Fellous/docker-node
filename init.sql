@@ -1,6 +1,7 @@
-CREATE DATABASE profiles_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE profiles_db;
+CREATE DATABASE IF NOT EXISTS profiles_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;;
 
+USE profiles_db;
+ 
 CREATE TABLE profiles (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
