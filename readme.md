@@ -103,7 +103,7 @@ Ce fichier contient les styles CSS pour l'application, assurant une apparence vi
 
 ## Captures d'Écran
 
-![Capture d'écran](file-Ekvr7NyED25idLiaEeYosA6T.png)
+![Capture d'écran](./img/profile_screen.png)
 
 ## Contributions
 
