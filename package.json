@@ -1,15 +1,13 @@
 {
   "name": "daniel-docker-profile",
   "version": "1.0.0",
-  "description": "Profile application with a funny profile description for a geek who does sports, watches anime, and plays games.",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Votre Nom",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "ejs": "^3.1.6"
+    "mysql2": "^2.2.5"
   }
 }

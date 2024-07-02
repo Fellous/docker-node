@@ -13,8 +13,8 @@
     <p><%= profile.description %></p>
     <h2>Hobbies</h2>
     <ul>
-      <% profile.hobbies.forEach(hobby => { %>
-        <li><%= hobby %></li>
+      <% profile.hobbies.split(',').forEach(hobby => { %>
+        <li><%= hobby.trim() %></li>
       <% }); %>
     </ul>
     <div class="navigation-buttons">
